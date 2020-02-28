@@ -14,9 +14,7 @@ pipeline {
         
     stage('Install dependencies') {
       steps {
-        sh 'sudo apt-get install g++ build-essential'
         sh 'npm i'
-        sh 'ls'
       }
     }
      
