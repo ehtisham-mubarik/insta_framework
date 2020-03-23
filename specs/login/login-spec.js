@@ -62,7 +62,5 @@ describe('Login', () => {
 
         // Click on profile icon
         this.commonPage.ProfileIconLnk.click();
-
-        browser.debug();
     });
 });

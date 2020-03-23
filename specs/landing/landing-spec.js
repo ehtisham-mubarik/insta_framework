@@ -28,7 +28,5 @@ describe('Login', () => {
         // Click on profile icon
         this.commonPage.disableWelcomePopup();
         this.landingPage.verifySuggestedProfilesSection();
-        
-        browser.debug();
     });
 });
