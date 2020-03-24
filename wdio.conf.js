@@ -65,14 +65,6 @@ exports.config = {
     // Test Configurations
     // ===================
     // Define all options that are relevant for the WebdriverIO instance here
-    dockerOptions: {
-        image: 'selenium/standalone-chrome',
-        healthCheck: 'http://localhost:4444',
-        options: {
-            p: ['4444:4444'],
-            shmSize: '2g'
-        }
-    },
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
     logLevel: 'error',
@@ -115,8 +107,7 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    // services: ['chromedriver'],
-    services: ['docker'],
+    services: ['chromedriver'],
     
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
