@@ -11,4 +11,5 @@ RUN apt-get update -qq && apt-get install -qq --no-install-recommends \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 COPY . .
-CMD ./node_modules/.bin/wdio wdio.conf.js
+CMD ["sleep", "inifinity"]
+#CMD ./node_modules/.bin/wdio wdio.conf.js
